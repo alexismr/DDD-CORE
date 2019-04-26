@@ -1,0 +1,14 @@
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\FunctionalTests.deps.json
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\FunctionalTests.runtimeconfig.json
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\FunctionalTests.runtimeconfig.dev.json
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\FunctionalTests.dll
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\bin\Debug\netcoreapp2.2\FunctionalTests.pdb
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\obj\Debug\netcoreapp2.2\FunctionalTests.csprojAssemblyReference.cache
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\obj\Debug\netcoreapp2.2\FunctionalTests.csproj.CoreCompileInputs.cache
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\obj\Debug\netcoreapp2.2\FunctionalTests.AssemblyInfoInputs.cache
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\obj\Debug\netcoreapp2.2\FunctionalTests.AssemblyInfo.cs
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\obj\Debug\netcoreapp2.2\FunctionalTests.dll
+C:\Users\amontanar\source\repos\monilithic_Api\FunctionalTests\obj\Debug\netcoreapp2.2\FunctionalTests.pdb
