@@ -24,12 +24,7 @@ namespace monilithic_Api.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> SetCatalog(CatalogItemViewModel item)
-        {
 
-            return Ok();
-        }
 
     }
 }

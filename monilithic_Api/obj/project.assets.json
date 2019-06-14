@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Ardalis.GuardClauses/1.2.8": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4781,6 +4793,9 @@
       "ApplicationCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Ardalis.GuardClauses": "1.2.8"
+        },
         "compile": {
           "bin/placeholder/ApplicationCore.dll": {}
         },
@@ -4807,6 +4822,21 @@
     }
   },
   "libraries": {
+    "Ardalis.GuardClauses/1.2.8": {
+      "sha512": "LyCGxppN/Llcb+vxMo5NTBMKzjkzBD4paaM3JYz/tr2Dl1pcxVxVUW7e0FjpXvouuJMF6uJ2SfIeCvxgC60Ohw==",
+      "type": "package",
+      "path": "ardalis.guardclauses/1.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.guardclauses.1.2.8.nupkg.sha512",
+        "ardalis.guardclauses.nuspec",
+        "lib/net40/Ardalis.GuardClauses.dll",
+        "lib/net40/Ardalis.GuardClauses.pdb",
+        "lib/netstandard1.1/Ardalis.GuardClauses.dll",
+        "lib/netstandard1.1/Ardalis.GuardClauses.pdb"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "91JMnE9zdIDphG00qgRvl8ZwKEjqAbNlJdfXUoMiIWPfpYyH7fyCsTSj6/aynRdw/Qr/K70xC7QC6MOJ1vFBJQ==",
       "type": "package",
@@ -8132,13 +8162,15 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "Newtonsoft.Json.11.0.2.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -8156,9 +8188,7 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml"
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
@@ -13095,11 +13125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\monilithic_Api\\monilithic_Api.csproj",
+      "projectUniqueName": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\monilithic_Api\\monilithic_Api.csproj",
       "projectName": "monilithic_Api",
-      "projectPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\monilithic_Api\\monilithic_Api.csproj",
+      "projectPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\monilithic_Api\\monilithic_Api.csproj",
       "packagesPath": "C:\\Users\\amontanar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\monilithic_Api\\obj\\",
+      "outputPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\monilithic_Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13118,11 +13148,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

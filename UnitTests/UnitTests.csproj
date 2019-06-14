@@ -15,9 +15,11 @@
   <ItemGroup>
     <Folder Include="ApplicationCore\Entities\BasketTests\" />
     <Folder Include="ApplicationCore\Entities\OrderTests\" />
-    <Folder Include="ApplicationCore\Services\BasketServiceTests\" />
-    <Folder Include="ApplicationCore\Specifications\" />
     <Folder Include="Builders\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationCore\ApplicationCore.csproj" />
   </ItemGroup>
 
 </Project>

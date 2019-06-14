@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Ardalis.GuardClauses/1.2.8": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/15.9.0": {
         "type": "package",
         "compile": {
@@ -1673,10 +1685,38 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Ardalis.GuardClauses": "1.2.8"
+        },
+        "compile": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Ardalis.GuardClauses/1.2.8": {
+      "sha512": "LyCGxppN/Llcb+vxMo5NTBMKzjkzBD4paaM3JYz/tr2Dl1pcxVxVUW7e0FjpXvouuJMF6uJ2SfIeCvxgC60Ohw==",
+      "type": "package",
+      "path": "ardalis.guardclauses/1.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.guardclauses.1.2.8.nupkg.sha512",
+        "ardalis.guardclauses.nuspec",
+        "lib/net40/Ardalis.GuardClauses.dll",
+        "lib/net40/Ardalis.GuardClauses.pdb",
+        "lib/netstandard1.1/Ardalis.GuardClauses.dll",
+        "lib/netstandard1.1/Ardalis.GuardClauses.pdb"
+      ]
+    },
     "Microsoft.CodeCoverage/15.9.0": {
       "sha512": "7hLVTRUCxAALZakJQgGfWJammOBXWiLyGGpaFz/+zDR+Rwj+sB4RMgEZAw8HQDpc1tjpbnzq9JEs/+OmFI94XA==",
       "type": "package",
@@ -2576,6 +2616,9 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2590,8 +2633,6 @@
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.9.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
     },
@@ -5828,10 +5869,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationCore/ApplicationCore.csproj",
+      "msbuildProject": "../ApplicationCore/ApplicationCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "ApplicationCore >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "xunit >= 2.4.0",
@@ -5845,11 +5892,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\UnitTests\\UnitTests.csproj",
+      "projectPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\amontanar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5867,7 +5914,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\ApplicationCore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

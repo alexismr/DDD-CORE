@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Ardalis.GuardClauses/1.2.8": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -211,6 +223,21 @@
     }
   },
   "libraries": {
+    "Ardalis.GuardClauses/1.2.8": {
+      "sha512": "LyCGxppN/Llcb+vxMo5NTBMKzjkzBD4paaM3JYz/tr2Dl1pcxVxVUW7e0FjpXvouuJMF6uJ2SfIeCvxgC60Ohw==",
+      "type": "package",
+      "path": "ardalis.guardclauses/1.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.guardclauses.1.2.8.nupkg.sha512",
+        "ardalis.guardclauses.nuspec",
+        "lib/net40/Ardalis.GuardClauses.dll",
+        "lib/net40/Ardalis.GuardClauses.pdb",
+        "lib/netstandard1.1/Ardalis.GuardClauses.dll",
+        "lib/netstandard1.1/Ardalis.GuardClauses.pdb"
+      ]
+    },
     "Microsoft.NETCore.App/2.2.0": {
       "sha512": "QU8taCyeyePwatrj+h+750lMnsPCq3YPaGmsdtSHXPCjDyjto2KT7QDNVet0oRliX4PjaINpyg0Yzd9DnQ/Wkw==",
       "type": "package",
@@ -682,6 +709,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Ardalis.GuardClauses >= 1.2.8",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -692,11 +720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\ApplicationCore\\ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\ApplicationCore\\ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\amontanar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amontanar\\source\\repos\\monilithic_Api\\ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -726,6 +754,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Ardalis.GuardClauses": {
+            "target": "Package",
+            "version": "[1.2.8, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

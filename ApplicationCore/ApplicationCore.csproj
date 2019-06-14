@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Exceptions\" />
+    <PackageReference Include="Ardalis.GuardClauses" Version="1.2.8" />
   </ItemGroup>
 
 </Project>
