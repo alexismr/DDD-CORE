@@ -1,16 +1,19 @@
-﻿using ApplicationCore.Entities;
-using ApplicationCore.Interfaces;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using monilithic_Api.interfaces;
-using monilithic_Api.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿
 namespace monilithic_Api.services
 {
+    using ApplicationCore.Entities;
+    using ApplicationCore.Interfaces;
+    using ApplicationCore.Specifications;
+    using Microsoft.AspNetCore.Mvc.Rendering;
+    using Microsoft.Extensions.Logging;
+    using monilithic_Api.interfaces;
+    using monilithic_Api.ViewModels;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+
     /// <summary>
     /// This is a UI-specific service so belongs in UI project. It does not contain any business logic and works
     /// with UI-specific types (view models and SelectListItem types).
@@ -37,12 +40,17 @@ namespace monilithic_Api.services
             _uriComposer = uriComposer;
         }
 
-        public async Task<CatalogIndexViewModel> GetCatalogItems()
-        { 
-
+        public async Task<CatalogIndexViewModel> GetCatalogItems(int pageIndex, int itemsPage, int? brandId, int? typeId)
+        {
             _logger.LogInformation("GetCatalogItems called.");
+
+            var filterSpecification = new CatalogFilterSpecification(brandId, typeId);
+            var filterPaginatedSpecification =
+                new CatalogFilterPaginatedSpecification(itemsPage * pageIndex, itemsPage, brandId, typeId);
+
             // the implementation below using ForEach and Count. We need a List.
-            var itemsOnPage = _itemRepository.ListAll().ToList();
+            var itemsOnPage = _itemRepository.List(filterPaginatedSpecification).ToList();
+            var totalItems = _itemRepository.Count(filterSpecification);
 
             itemsOnPage.ForEach(x =>
             {
@@ -60,7 +68,19 @@ namespace monilithic_Api.services
                 }),
                 Brands = await GetBrands(),
                 Types = await GetTypes(),
+                BrandFilterApplied = brandId ?? 0,
+                TypesFilterApplied = typeId ?? 0,
+                PaginationInfo = new PaginationInfoViewModel()
+                {
+                    ActualPage = pageIndex,
+                    ItemsPerPage = itemsOnPage.Count,
+                    TotalItems = totalItems,
+                    TotalPages = int.Parse(Math.Ceiling(((decimal)totalItems / itemsPage)).ToString())
+                }
             };
+
+            vm.PaginationInfo.Next = (vm.PaginationInfo.ActualPage == vm.PaginationInfo.TotalPages - 1) ? "is-disabled" : "";
+            vm.PaginationInfo.Previous = (vm.PaginationInfo.ActualPage == 0) ? "is-disabled" : "";
 
             return vm;
         }
@@ -68,10 +88,8 @@ namespace monilithic_Api.services
         public async Task<IEnumerable<SelectListItem>> GetBrands()
         {
             _logger.LogInformation("GetBrands called.");
-
-
             var brands = await _brandRepository.ListAllAsync();
-
+        
             var items = new List<SelectListItem>
             {
                 new SelectListItem() { Value = null, Text = "All", Selected = true }
@@ -80,7 +98,6 @@ namespace monilithic_Api.services
             {
                 items.Add(new SelectListItem() { Value = brand.Id.ToString(), Text = brand.Brand });
             }
-
             return items;
         }
 
@@ -96,7 +113,6 @@ namespace monilithic_Api.services
             {
                 items.Add(new SelectListItem() { Value = type.Id.ToString(), Text = type.Type });
             }
-
             return items;
         }
     }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "50631275d5182111f3b5ef3581b577000f09a7f7"
+    "signature": "0ceb149e6095e6134b4426faf1662f75c4651ebe"
   },
   "compilationOptions": {
     "defines": [
@@ -29,6 +29,7 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.0.2105168",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
           "Swashbuckle.AspNetCore": "4.0.1"
         },
@@ -37,6 +38,20 @@
         },
         "compile": {
           "monilithic_Api.dll": {}
+        }
+      },
+      "Ardalis.GuardClauses/1.2.8": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {
+            "assemblyVersion": "1.2.8.0",
+            "fileVersion": "1.2.8.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -304,6 +319,7 @@
       },
       "Microsoft.NETCore.Platforms/2.2.0": {},
       "Microsoft.NETCore.Targets/2.0.0": {},
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.0.2105168": {},
       "Microsoft.VisualStudio.Web.CodeGeneration/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
@@ -694,6 +710,9 @@
         }
       },
       "ApplicationCore/1.0.0": {
+        "dependencies": {
+          "Ardalis.GuardClauses": "1.2.8"
+        },
         "runtime": {
           "ApplicationCore.dll": {}
         },
@@ -3649,6 +3668,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Ardalis.GuardClauses/1.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LyCGxppN/Llcb+vxMo5NTBMKzjkzBD4paaM3JYz/tr2Dl1pcxVxVUW7e0FjpXvouuJMF6uJ2SfIeCvxgC60Ohw==",
+      "path": "ardalis.guardclauses/1.2.8",
+      "hashPath": "ardalis.guardclauses.1.2.8.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -3739,6 +3765,13 @@
       "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
       "path": "microsoft.netcore.targets/2.0.0",
       "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.0.2105168": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OcDidVAHC9shKB0DbF7h2E3Goduf9s5wj4BtcuQrRFnDHNoYAixowwzdmn4FKxWca6KLA5n4kYMhF6SW0L7Vrw==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.0.2105168",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.0.2105168.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.2.0": {
       "type": "package",

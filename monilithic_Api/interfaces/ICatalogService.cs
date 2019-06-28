@@ -9,7 +9,7 @@ namespace monilithic_Api.interfaces
 {
     public interface ICatalogService
     {
-        Task<CatalogIndexViewModel> GetCatalogItems();
+        Task<CatalogIndexViewModel> GetCatalogItems(int pageIndex, int itemsPage, int? brandId, int? typeId);
         Task<IEnumerable<SelectListItem>> GetBrands();
         Task<IEnumerable<SelectListItem>> GetTypes();
     }

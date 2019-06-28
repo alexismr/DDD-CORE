@@ -16,7 +16,8 @@ namespace Infrastructure.Data
         /// <param name="loggerFactory"></param>
         /// <param name="retry"></param>
         /// <returns></returns>
-        public static async Task SeedAsync(CatalogContext catalogContext, ILoggerFactory loggerFactory, int? retry = 0)
+        public static async Task SeedAsync(CatalogContext catalogContext,
+            ILoggerFactory loggerFactory, int? retry = 0)
         {
             int retryForAvailability = retry.Value;
             try

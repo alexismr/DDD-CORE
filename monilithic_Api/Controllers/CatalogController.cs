@@ -19,7 +19,7 @@ namespace monilithic_Api.Controllers
         [HttpGet]
         public async Task<IActionResult> List()
         {
-            var catalogModel = await _catalogService.GetCatalogItems();
+            var catalogModel = await _catalogService.GetCatalogItems(2,1,0,0);
             return Ok(catalogModel);
         }
 

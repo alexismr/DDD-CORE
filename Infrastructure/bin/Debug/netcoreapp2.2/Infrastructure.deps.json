@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b3bba634aee890345a23dbd6b15487b729bc81eb"
+    "signature": "0725d2df85c9e1796bb39fac858652fb0d904460"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,6 +16,14 @@
         },
         "runtime": {
           "Infrastructure.dll": {}
+        }
+      },
+      "Ardalis.GuardClauses/1.2.8": {
+        "runtime": {
+          "lib/netstandard1.1/Ardalis.GuardClauses.dll": {
+            "assemblyVersion": "1.2.8.0",
+            "fileVersion": "1.2.8.0"
+          }
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -523,6 +531,9 @@
         }
       },
       "ApplicationCore/1.0.0": {
+        "dependencies": {
+          "Ardalis.GuardClauses": "1.2.8"
+        },
         "runtime": {
           "ApplicationCore.dll": {}
         }
@@ -534,6 +545,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Ardalis.GuardClauses/1.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LyCGxppN/Llcb+vxMo5NTBMKzjkzBD4paaM3JYz/tr2Dl1pcxVxVUW7e0FjpXvouuJMF6uJ2SfIeCvxgC60Ohw==",
+      "path": "ardalis.guardclauses/1.2.8",
+      "hashPath": "ardalis.guardclauses.1.2.8.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
