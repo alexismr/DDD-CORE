@@ -10,7 +10,6 @@ C:\Users\amontanar\source\repos\monilithic_Api\ApplicationCore\obj\Debug\netcore
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\bin\Debug\netcoreapp2.2\ApplicationCore.deps.json
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\bin\Debug\netcoreapp2.2\ApplicationCore.dll
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\bin\Debug\netcoreapp2.2\ApplicationCore.pdb
-C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\obj\Debug\netcoreapp2.2\ApplicationCore.csprojAssemblyReference.cache
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\obj\Debug\netcoreapp2.2\ApplicationCore.csproj.CoreCompileInputs.cache
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\obj\Debug\netcoreapp2.2\ApplicationCore.AssemblyInfoInputs.cache
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\ApplicationCore\obj\Debug\netcoreapp2.2\ApplicationCore.AssemblyInfo.cs

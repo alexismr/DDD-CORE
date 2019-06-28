@@ -26,3 +26,10 @@ C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\obj\Debug\netcoreapp2.2
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.AssemblyInfo.cs
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.dll
 C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.pdb
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\bin\Debug\netcoreapp2.2\ApplicationCore.dll
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\bin\Debug\netcoreapp2.2\Infrastructure.dll
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\bin\Debug\netcoreapp2.2\UnitTests.dll
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\bin\Debug\netcoreapp2.2\Infrastructure.pdb
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\bin\Debug\netcoreapp2.2\UnitTests.pdb
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\bin\Debug\netcoreapp2.2\ApplicationCore.pdb
+C:\Users\amontanar\Desktop\ddd\DDD-CORE\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.csproj.CopyComplete

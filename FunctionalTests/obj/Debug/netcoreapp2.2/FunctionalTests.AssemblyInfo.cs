@@ -11,6 +11,9 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ApplicationCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\ApplicationCore", "ApplicationCore.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\Infrastructure", "Infrastructure.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("monilithic_Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\amontanar\\Desktop\\ddd\\DDD-CORE\\monilithic_Api", "monilithic_Api.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
