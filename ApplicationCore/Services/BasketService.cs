@@ -32,7 +32,7 @@ namespace ApplicationCore.Services
 
         public async Task AddItemToBasket(int basketId, int catalogItemId, decimal price, int quantity)
         {
-            var basket = await _basketRepository.GetByIdAsync(basketId);
+            var basket = await _basketRepository.GetByIdAsync(basketId); // retorna la entidad 
 
             basket.AddItem(catalogItemId, price, quantity);
 
@@ -45,10 +45,10 @@ namespace ApplicationCore.Services
 
             foreach (var item in basket.Items.ToList())
             {
-                await _basketItemRepository.DeleteAsync(item);
+                await _basketItemRepository.DeleteAsync(item); // eliminar cada uno de los items asociados a la canasta
             }
 
-            await _basketRepository.DeleteAsync(basket);
+            await _basketRepository.DeleteAsync(basket);  // deleted entity
         }
 
         public async Task<int> GetBasketItemCountAsync(string userName)

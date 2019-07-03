@@ -22,14 +22,17 @@ namespace monilithic_Api.services
         private readonly IAsyncRepository<Basket> _basketRepository;
         private readonly IUriComposer _uriComposer;
         private readonly IRepository<CatalogItem> _itemRepository;
+        private readonly IAsyncRepository<BasketItem> _basketItemRepository;
 
         public BasketViewModelService(IAsyncRepository<Basket> basketRepository,
             IRepository<CatalogItem> itemRepository,
-            IUriComposer uriComposer)
+            IUriComposer uriComposer,
+            IAsyncRepository<BasketItem> basketItemRepository )
         {
             _basketRepository = basketRepository;
             _uriComposer = uriComposer;
             _itemRepository = itemRepository;
+            _basketItemRepository = basketItemRepository;
         }
 
         public async Task<BasketViewModel> GetOrCreateBasketForUser(string userName)
@@ -80,5 +83,7 @@ namespace monilithic_Api.services
                 Items = new List<BasketItemViewModel>()
             };
         }
+
+
     }
 }
